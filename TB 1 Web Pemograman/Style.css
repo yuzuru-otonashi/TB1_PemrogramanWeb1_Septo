@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+} 
+header {
+    height: 68px;
+}
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header h1 a {
+    transition: .4s;
+}
+header h1 a:hover {
+    color: red;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+header ul li a {
+    transition: .3s;
+}
+header ul li a:hover {
+    color: green;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto; 
+}
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgb(31, 135, 204);
+}
+.container1 ul li {
+    color: black;
+}
+.container2 {
+    color: black;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.imgprofile{
+    display: flex;
+    border-radius: 5%;
+    width: 200px;
+    height:240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.data-profile {
+    text-align: center;
+    margin:auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.data-profile1 {
+    text-align: center;
+    margin:auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.data-profile2 {
+    text-align: center;
+    margin:auto;
+    font-style: oblique;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+.data-profile3 {
+    text-align: center;
+    margin:auto;
+    font-style: oblique;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: purple;
+}
+.data-profile4 {
+    text-align: center;
+    margin:auto;
+    font-style: oblique;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+}
+.data-profile5 {
+    text-align: center;
+    margin:auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: black;
+}
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+.mobile-menu:hover {
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: purple;
+    opacity: .8;
+    transition: .3s;
+}
+.sidebar ul li a {
+    color: white;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+.sidebar ul li:hover {
+    background-color: blue;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+.banner {
+    background-image: url('https://w.wallhaven.cc/full/e7/wallhaven-e77698.jpg');
+    background-position: center;
+}
+section {
+    padding: 120px 0px;
+}
+#about {
+    background-image: url('https://w.wallhaven.cc/full/wq/wallhaven-wq17oq.jpg');
+}
+#about p {
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+section h4 {
+    padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+    color: purple;
+}
+section h4::before {
+    content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: purple;
+	left: calc(50% - 60px);
+}
+#skills {
+	background-image: url('https://w.wallhaven.cc/full/pk/wallhaven-pkl7pp.jpg');
+}
+#skills .bar {
+	height: 25px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	margin: 5px 0 20px 0;
+}
+.bar .nilai {
+	height: 25px;
+	background-color: purple;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.html {
+	width:80%;
+}
+.css {
+	width:70%;
+}
+.js {
+	width:70%;
+}
+#contact {
+    background-image: url('https://cdn.discordapp.com/attachments/828068613532680224/960887135563546664/wallhaven-rdxqkm_2560x1080.png?size=4096');
+    background-position: center;
+}
+.col-3 {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
+
+
+
+
+.social-media-icon {
+    padding: 2px 3px 1px 3px;
+    background: rgb(245, 245, 245);
+    color: rgb(255, 11, 11);
+    margin: 5px;
+    border-radius: 2px;
+}
+a.social-media-icon:hover{
+        background: #fff!important;
+        color: #222!important;
+    }
+.youtube {
+    background: red;
+    text-align: center;
+    padding: 2px 3px 1px 3px;
+    background: rgb(245, 245, 245);
+    color: rgb(255, 11, 11);
+    margin: 5px;
+    border-radius: 4px;
+}
+.facebook {
+    background: blue;
+    text-align: center;
+    padding: 2px 3px 1px 3px;
+    color: white;
+    margin: 5px;
+    border-radius: 4px;
+}
+.discord {
+    background: blue;
+    color: white;
+    padding: 2px 4px 1px 4px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+}
+.twitch {
+    background: purple;
+    color: white;
+    padding: 2px 4px 1px 4px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+}
+.instagram {
+    background: rgb(255, 11, 11);
+    color: white;
+    padding: 2px 4px 1px 4px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 4px;
+}
